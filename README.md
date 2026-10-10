@@ -5,3 +5,4 @@ Añadida feature: develop
 Añadida feature: 1/merge
 Añadida feature: develop
 - AppVersion-2 - 10/10/2026 19:33
+Añadida feature: main
