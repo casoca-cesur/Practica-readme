@@ -40,6 +40,8 @@ jobs:
           GH_DEV_TOKEN: ${{ secrets.DEV_TOKEN }}
           shell: powershell
         run: | 
+            write-output $env:GH_SECRET_DEV
+            write-output $env:LOCAL_DEV_TOKEN
             if ($env:GH_SECRET_DEV -eq $env:LOCAL_DEV_TOKEN) {
             Write-Output "Los tokens coinciden"
             } else {
