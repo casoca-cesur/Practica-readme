@@ -3,3 +3,4 @@ App Version 0
 Añadida feature: 1/merge
 Añadida feature: develop
 Añadida feature: 1/merge
+Añadida feature: develop
