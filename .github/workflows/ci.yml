@@ -16,14 +16,14 @@ jobs:
             - name: Clone repo
               env:
                 GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: git clone https://x-access-token:${GH_TOKEN}@github.com/casoca-cesur/Practica-Github-Avanzado.git
+              run: git clone https://x-access-token:${GH_TOKEN}@github.com/casoca-cesur/Practica-readme.git
               
             - name: Add new line to README.md
-              run: 'cd Practica-Github-Avanzado && echo "Añadida feature: $GITHUB_REF_NAME" >> README.md'
+              run: 'cd Practica-readme && echo "Añadida feature: $GITHUB_REF_NAME" >> README.md'
 
             - name: Upload changes
               run: |
-                cd Practica-Github-Avanzado
+                cd Practica-readme
                 git config --global user.name "casoca-cesur"
                 git config --global user.email "carmen.s607893@cesurformacion.com"
                 git add README.md
